@@ -9,23 +9,23 @@ Program ini menggunakan 4 class, yang terdiri dari 1 class utama (Entry Point) d
 
 ### 1. Class Lembaga
 Menjadi kerangka untuk menyimpan data instansi penyalur bantuan. Atribut:
-  - 'namaLembaga' (String): Nama lembaga penyalur (contoh: BAZNAS).
-  - 'asalNegara' (String): Wilayah atau negara asal lembaga.
-  - 'kontak' (String): Nomor kontak lembaga.
+  - namaLembaga (String): Nama lembaga penyalur 
+  - asalNegara (String): Wilayah atau negara asal lembaga.
+  - kontak (String): Nomor kontak lembaga.
 
 ### 2. Class BantuanDana
 Class entitas untuk mencatat data donasi yang berupa uang. Atribut:
-  - 'idDana' (int): ID unik untuk pendataan dana.
-  - 'namaDonatur' (String): Nama pihak yang memberikan donasi.
-  - 'nominal' (double): Jumlah uang yang didonasikan.
-  - 'lembagaPenyalur' (Lembaga): Menyimpan objek dari class Lembaga.
+  - idDana (int): ID unik untuk pendataan dana.
+  - namaDonatur (String): Nama pihak yang memberikan donasi.
+  - nominal (double): Jumlah uang yang didonasikan.
+  - lembagaPenyalur (Lembaga): Menyimpan objek dari class Lembaga.
 
 ### 3. Class BantuanLogistik
 Class entitas untuk mencatat data donasi yang berupa barang fisik. Atribut:
-  - 'idLogistik' (int): ID unik untuk pendataan barang.
-  - 'namaBarang' (String): Jenis barang yang disumbangkan (contoh: Pakaian, Makanan).
-  - 'beratKg' (int): Berat barang dalam hitungan kilogram.
-  - 'lembagaPenyalur' (Lembaga): Menyimpan objek dari class Lembaga.
+  - idLogistik (int): ID unik untuk pendataan barang.
+  - namaBarang (String): Jenis barang yang disumbangkan (contoh: Pakaian, Makanan).
+  - beratKg (int): Berat barang dalam hitungan kilogram.
+  - lembagaPenyalur (Lembaga): Menyimpan objek dari class Lembaga.
 
 ### 4. Class MinproPalestina
 Class utama tempat program pertama kali berjalan, Berperan Mengatur jalannya aplikasi, menampilkan menu interaktif menampilkan opsi opsi yang mengeksekusi perulangan dan CRUD berdasarkan pilihan user.
@@ -50,7 +50,7 @@ Jika memilih menu 1 atau 2, program akan masuk ke dalam submenu khusus. Alur ker
 
 
 1. Tambah Data:
-  *User* diminta untuk memasukkan data seperti ID, Nama (Donatur/Barang), dan jumlah (Nominal/Berat). Setelah itu, program akan menampilkan daftar 6 Lembaga Penyalur. *User* tinggal mengetik nomor urut untuk memilih lembaga. Jika proses input benar, akan muncul notifikasi '>> Alhamdulillah Berhasil ditambah'.
+  User diminta untuk memasukkan data seperti ID, Nama (Donatur/Barang), dan jumlah (Nominal/Berat). Setelah itu, program akan menampilkan daftar 6 Lembaga Penyalur. *User* tinggal mengetik nomor urut untuk memilih lembaga. Jika proses input benar, akan muncul notifikasi '>> Alhamdulillah Berhasil ditambah'.
   <img width="398" height="291" alt="image" src="https://github.com/user-attachments/assets/fedc4cbb-1d02-4341-ac78-1a4eb9f339cb" />
 
 
@@ -60,7 +60,7 @@ Jika memilih menu 1 atau 2, program akan masuk ke dalam submenu khusus. Alur ker
 
 
 4. Ubah Nominal / Berat:
-  *User* diminta memasukkan ID target yang ingin diubah. Program akan melakukan pencarian. Jika ID ditemukan, *user* bisa memasukkan jumlah nominal atau berat yang baru. Jika ID salah atau tidak ada, sistem akan memunculkan peringatan ID tidak ditemukan.'
+   User diminta memasukkan ID target yang ingin diubah. Program akan melakukan pencarian. Jika ID ditemukan, *user* bisa memasukkan jumlah nominal atau berat yang baru. Jika ID salah atau tidak ada, sistem akan memunculkan peringatan ID tidak ditemukan.'
   <img width="374" height="97" alt="image" src="https://github.com/user-attachments/assets/91ac7c46-5ae7-437d-ac83-887538b96975" />
 
 
